@@ -29,20 +29,20 @@ const certifications = [
 export default function CertificationsSection() {
     return (
         <section className="relative py-16 bg-gray-50 overflow-hidden">
-           
+
             <div
                 className="absolute inset-0 bg-cover bg-center z-0"
                 style={{ backgroundImage: "url('/assets/bg1.jpg')" }}
             />
-           
+
             <div className="absolute inset-0 bg-white/40 z-0" />
 
             <div className="container mx-auto px-4 relative z-10">
-                <div className="text-center mb-12">
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                <div className=" mb-12">
+                    <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                         Certified & <span className="text-[#00aaff]">Accredited</span>
                     </h2>
-                    <div className="w-20 h-1 bg-[#00aaff] mx-auto mt-4 rounded-full" />
+                    <div className="h-1 w-20 bg-gradient-to-r from-[#00aaff] to-blue-200 rounded-full mb-4"></div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -56,7 +56,7 @@ export default function CertificationsSection() {
                             whileHover={{ y: -5 }}
                             className="relative p-8 rounded-xl shadow-sm hover:shadow-lg transition-all border border-gray-100 flex flex-col items-center text-center group overflow-hidden"
                         >
-                            
+
                             <div
                                 className="absolute inset-0 bg-cover bg-center z-0"
                                 style={{ backgroundImage: "url('/assets/bg3.jpeg')" }}

@@ -1,15 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Eye, Target, FlaskConical, Award } from "lucide-react";
+import { Eye, Target, Award, TrendingUp, Users } from "lucide-react";
 import Image from "next/image";
 
 export default function ExcellenceSection() {
     return (
         <section className="py-20 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
-                <div className="flex flex-col lg:flex-row gap-12 items-center">
-                 
+
+                {/* Heading */}
+                <div className="mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                        Excellence in <span className="text-[#00aaff]">Global Healthcare</span>
+                    </h2>
+
+                    <p className="text-xl text-gray-600">
+                        Leading pharmaceutical innovation for over 25 years
+                    </p>
+                    <div className="h-1 w-20 bg-gradient-to-r from-[#00aaff] to-blue-50 rounded-full mb-4" />
+                </div>
+
+                {/* Main Section */}
+                <div className="flex flex-col lg:flex-row gap-12 items-start">
+
+                    {/* LEFT — IMAGE SECTION */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -17,108 +32,103 @@ export default function ExcellenceSection() {
                         transition={{ duration: 0.6 }}
                         className="w-full lg:w-1/2 relative"
                     >
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <div className="relative rounded-3xl shadow-2xl overflow-visible">
                             <img
                                 src="https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=2080&auto=format&fit=crop"
                                 alt="Pharmaceutical Research"
-                                className="w-full h-[500px] object-cover"
+                                className="w-full h-[450px] object-cover"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
 
-                       
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.3 }}
-                                className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-lg flex items-center gap-3 max-w-[200px]"
-                            >
-                                <div className="bg-blue-100 p-2 rounded-full">
-                                    <FlaskConical className="w-6 h-6 text-[#00aaff]" />
-                                </div>
-                                <div>
-                                    <p className="text-xs text-gray-500 font-semibold">Research</p>
-                                    <p className="text-sm font-bold text-gray-800">Advanced Labs</p>
-                                </div>
-                            </motion.div>
+                            {/* Stats Cards Overlapping */}
+                            <div className="absolute -bottom-6 left-6 right-6 grid grid-cols-3 gap-4">
 
-                           
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.5 }}
-                                className="absolute top-6 right-6 bg-[#00aaff]/90 backdrop-blur-md p-4 rounded-xl shadow-lg flex items-center gap-3"
-                            >
-                                <div className="bg-white/20 p-2 rounded-full">
-                                    <Award className="w-6 h-6 text-white" />
+                                {/* Card 1 */}
+                                <div className="bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg text-center transform hover:-translate-y-1 transition-transform duration-300">
+                                    <div className="bg-blue-50 w-12 h-12 rounded-xl flex items-center justify-center mx-auto -mt-6 shadow-md">
+                                        <Award className="w-6 h-6 text-[#00aaff]" />
+                                    </div>
+                                    <h3 className="text-2xl font-bold text-gray-900">10+</h3>
+                                    <p className="text-xs text-gray-600 font-medium">Years</p>
                                 </div>
-                                <div>
-                                    <p className="text-xs text-white/80 font-semibold">Award Winning</p>
-                                    <p className="text-sm font-bold text-white">Top Pharma 2024</p>
+
+                                {/* Card 2 */}
+                                <div className="bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg text-center transform hover:-translate-y-1 transition-transform duration-300">
+                                    <div className="bg-blue-50 w-12 h-12 rounded-xl flex items-center justify-center mx-auto -mt-6 shadow-md">
+                                        <TrendingUp className="w-6 h-6 text-[#00aaff]" />
+                                    </div>
+                                    <h3 className="text-2xl font-bold text-gray-900">150+</h3>
+                                    <p className="text-xs text-gray-600 font-medium">Products</p>
                                 </div>
-                            </motion.div>
+
+                                {/* Card 3 */}
+                                <div className="bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg text-center transform hover:-translate-y-1 transition-transform duration-300">
+                                    <div className="bg-blue-50 w-12 h-12 rounded-xl flex items-center justify-center mx-auto -mt-6 shadow-md">
+                                        <Users className="w-6 h-6 text-[#00aaff]" />
+                                    </div>
+                                    <h3 className="text-2xl font-bold text-gray-900">50+</h3>
+                                    <p className="text-xs text-gray-600 font-medium">Countries</p>
+                                </div>
+                            </div>
                         </div>
                     </motion.div>
 
-                   
-                    <div className="w-full lg:w-1/2">
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6 }}
-                        >
-                            <h4 className="text-[#00aaff] font-bold text-sm uppercase tracking-wider mb-2">
-                                Excellence in Global Healthcare
-                            </h4>
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                                Leading pharmaceutical innovation for over 25 years
-                            </h2>
-                            <p className="text-gray-600 mb-8 leading-relaxed">
-                                We are committed to improving global health by delivering affordable, high-quality pharmaceutical products that meet the highest international standards.
-                            </p>
-                        </motion.div>
+                    {/* RIGHT — TEXT CARDS */}
+                    <div className="w-full lg:w-1/2 space-y-6">
 
-                        <div className="space-y-6">
-                           
-                            <motion.div
-                                initial={{ opacity: 0, x: 50 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: 0.2 }}
-                                className="bg-blue-50 p-6 rounded-xl border border-blue-100 hover:shadow-md transition-shadow flex gap-4"
-                            >
-                                <div className="bg-[#00aaff] w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <Target className="w-6 h-6 text-white" />
+                        {/* Mission Card */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                            className="bg-blue-50/50 p-8 rounded-3xl border border-blue-100 hover:shadow-lg transition-all duration-300 relative overflow-hidden group"
+                        >
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100/50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110" />
+
+                            <div className="flex gap-6 relative z-10">
+                                <div className="bg-[#00aaff] w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-200">
+                                    <Target className="w-7 h-7 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2">Our Mission</h3>
-                                    <p className="text-gray-600 text-sm leading-relaxed">
-                                        To improve global health by delivering affordable, high-quality pharmaceutical products that meet the highest international standards.
+                                    <h3 className="text-xl font-bold text-gray-900 mb-3">Our Mission</h3>
+                                    <div className="h-1 w-12 bg-[#00aaff] rounded-full mb-4" />
+                                    <p className="text-gray-600 leading-relaxed">
+                                        To improve global health by delivering affordable, high-quality pharmaceutical
+                                        products that meet the highest international standards. We are committed to
+                                        making healthcare accessible to all while maintaining uncompromising quality
+                                        and safety standards.
                                     </p>
                                 </div>
-                            </motion.div>
+                            </div>
+                        </motion.div>
 
-                          
-                            <motion.div
-                                initial={{ opacity: 0, x: 50 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: 0.4 }}
-                                className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex gap-4"
-                                 style={{ backgroundImage: "url('/assets/bg3.jpeg')" }}
-                            >
-                                <div className="bg-[#00aaff] w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <Eye className="w-6 h-6 text-white" />
+                        {/* Vision Card */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.4 }}
+                            className="bg-blue-50/50 p-8 rounded-3xl border border-blue-100 hover:shadow-lg transition-all duration-300 relative overflow-hidden group"
+                        >
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100/50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110" />
+
+                            <div className="flex gap-6 relative z-10">
+                                <div className="bg-[#00aaff] w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-200">
+                                    <Eye className="w-7 h-7 text-white" />
                                 </div>
-                                <div >
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2" >Our Vision</h3>
-                                    <p className="text-gray-600 text-sm leading-relaxed ">
-                                        
-                                        To be a globally recognized pharmaceutical company known for innovation, quality, and integrity.
+                                <div>
+                                    <h3 className="text-xl font-bold text-gray-900 mb-3">Our Vision</h3>
+                                    <div className="h-1 w-12 bg-[#00aaff] rounded-full mb-4" />
+                                    <p className="text-gray-600 leading-relaxed">
+                                        To be a globally recognized pharmaceutical company known for innovation,
+                                        quality, and integrity. We aspire to be the preferred partner for healthcare
+                                        professionals and patients worldwide, continuously advancing the science of
+                                        medicine.
                                     </p>
                                 </div>
-                            </motion.div>
-                        </div>
+                            </div>
+                        </motion.div>
+
                     </div>
                 </div>
             </div>

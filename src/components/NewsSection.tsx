@@ -29,10 +29,12 @@ export default function NewsSection() {
                     <div>
                         <h2 className="text-3xl font-bold text-gray-900 mb-2">
                             Latest <span className="text-[#00aaff]">News & Updates</span>
+
                         </h2>
                         <p className="text-gray-500">
                             Stay informed about our recent developments
                         </p>
+                        <div className="h-1 w-30 bg-gradient-to-r from-[#00aaff] to-blue-50 rounded-full mb-4"></div>
                     </div>
                     <Link
                         href="/news"
