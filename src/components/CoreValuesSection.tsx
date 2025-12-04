@@ -47,15 +47,34 @@ export default function CoreValuesSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="bg-gray-50 p-8 rounded-xl text-center hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-100"
+                            className="relative p-8 rounded-xl text-center overflow-hidden group 
+                                       border border-transparent hover:border-gray-200 
+                                       shadow-sm hover:shadow-xl transition-all duration-300"
                         >
-                            <div className="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <value.icon className="w-7 h-7 text-[#00aaff]" />
+                         
+                            <div
+                                className="absolute inset-0 bg-cover bg-center rounded-xl 
+                                           group-hover:scale-105 transition-all duration-500"
+                                style={{
+                                    backgroundImage: "url('/assets/bg6.png')",
+                                }}
+                            ></div>
+
+                          
+                            <div className="absolute inset-0 bg-white/85 group-hover:bg-white/60 transition-all duration-300"></div>
+
+                         
+                            <div className="relative z-10">
+                                <div className="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                                    <value.icon className="w-7 h-7 text-[#00aaff]" />
+                                </div>
+                                <h3 className="text-lg font-bold text-gray-900 mb-3">
+                                    {value.title}
+                                </h3>
+                                <p className="text-gray-700 text-sm leading-relaxed">
+                                    {value.description}
+                                </p>
                             </div>
-                            <h3 className="text-lg font-bold text-gray-900 mb-3">{value.title}</h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">
-                                {value.description}
-                            </p>
                         </motion.div>
                     ))}
                 </div>

@@ -5,8 +5,8 @@ import AboutHero from "@/components/AboutHero";
 import StorySection from "@/components/StorySection";
 import MissionVisionSection from "@/components/MissionVisionSection";
 import LeadershipSection from "@/components/LeadershipSection";
-// import ManufacturingSection from "@/components/ManufacturingSection";
-// import CoreValuesSection from "@/components/CoreValuesSection";
+import ManufacturingSection from "@/components/ManufacturingSection";
+import CoreValuesSection from "@/components/CoreValuesSection";
 
 export default function About() {
     return (
@@ -17,8 +17,8 @@ export default function About() {
             <StorySection />
             <MissionVisionSection />
             <LeadershipSection />
-            {/* <ManufacturingSection />
-            <CoreValuesSection /> */}
+            <ManufacturingSection />
+            <CoreValuesSection />
             <Footer />
         </main>
     );
