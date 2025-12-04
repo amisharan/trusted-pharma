@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
     return (
@@ -9,14 +10,19 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div>
                         <div className="flex items-center gap-3 mb-6">
-                            <div className="bg-[#00aaff] text-white p-2 rounded-lg font-bold text-xl">
-                                PC
+                            <div className="relative w-12 h-12 bg-white rounded-lg overflow-hidden">
+                                <Image
+                                    src="/assets/bayles_logo.jpg"
+                                    alt="Bayle's Pharmaceutical Logo"
+                                    fill
+                                    className="object-contain"
+                                />
                             </div>
                             <div className="flex flex-col">
                                 <span className="text-white font-bold text-lg leading-none">
-                                    PharmaCo
+                                    BAYLE'S PHARMACEUTICAL
                                 </span>
-                                <span className="text-gray-400 text-xs">Healthcare Solutions</span>
+                                <span className="text-gray-400 text-xs font-bold">PRIVATE LIMITED</span>
                             </div>
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
@@ -89,7 +95,7 @@ export default function Footer() {
                             <li className="flex gap-3 items-start">
                                 <MapPin className="w-5 h-5 text-[#00aaff] flex-shrink-0" />
                                 <span>
-                                    PharmaCo Headquarters<br />
+                                    BAYLE'S PHARMACEUTICAL Headquarters<br />
                                     123 Medical Plaza, Mumbai<br />
                                     Maharashtra 400001, India
                                 </span>
@@ -100,7 +106,7 @@ export default function Footer() {
                             </li>
                             <li className="flex gap-3 items-center">
                                 <Mail className="w-5 h-5 text-[#00aaff] flex-shrink-0" />
-                                <span>contact@pharmaco.com</span>
+                                <span>contact@baylespharma.com</span>
                             </li>
                         </ul>
                     </div>
@@ -108,7 +114,7 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-                    <p>Copyright 2025 PharmaCo. All Rights Reserved.</p>
+                    <p>Copyright 2025 BAYLE'S PHARMACEUTICAL PRIVATE LIMITED. All Rights Reserved.</p>
                     <div className="flex gap-6">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" className="h-4 opacity-50 grayscale" />
                         <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="h-4 opacity-50 grayscale" />

@@ -7,7 +7,7 @@ export default function TopBar() {
                 <div className="flex items-center gap-2">
                     <MapPin className="w-3 h-3 text-[#00aaff]" />
                     <span>
-                        PharmaCo Headquarters 123 Medical Plaza, Mumbai Maharashtra
+                        BAYLE'S PHARMACEUTICAL Headquarters 123 Medical Plaza, Mumbai Maharashtra
                         400001,India
                     </span>
                 </div>

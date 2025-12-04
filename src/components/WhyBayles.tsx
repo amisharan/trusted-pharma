@@ -22,12 +22,12 @@ const benefits = [
     },
 ];
 
-export default function WhyPharmaCo() {
+export default function WhyBayles() {
     return (
         <section className="py-20 bg-white">
             <div className="container mx-auto px-4">
                 <div className="mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-2">Why PharmaCo?</h2>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-2">Why BAYLE'S PHARMACEUTICAL?</h2>
                     <p className="text-gray-600">
                         We offer a dynamic work environment where innovation meets impact
                     </p>

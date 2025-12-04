@@ -21,13 +21,13 @@ export default function StorySection() {
                         </h2>
                         <div className="space-y-4 text-gray-600 leading-relaxed">
                             <p>
-                                Founded in 2000, PharmaCo Healthcare Solutions has grown from a small pharmaceutical manufacturer to a globally recognized leader in quality healthcare products. Our commitment to excellence, innovation, and patient safety has remained unwavering throughout our journey.
+                                Founded in 2000, BAYLE'S PHARMACEUTICAL PRIVATE LIMITED has grown from a small pharmaceutical manufacturer to a globally recognized leader in quality healthcare products. Our commitment to excellence, innovation, and patient safety has remained unwavering throughout our journey.
                             </p>
                             <p>
                                 Today, we operate state-of-the-art manufacturing facilities, employ over 500 dedicated professionals, and distribute our products to more than 45 countries worldwide. Our extensive portfolio includes over 150 pharmaceutical formulations across multiple therapeutic areas.
                             </p>
                             <p>
-                                Every product that bears the PharmaCo name represents our promise of quality, safety, and efficacy. We invest heavily in research and development, quality assurance, and continuous improvement to ensure we deliver the best possible healthcare solutions to patients and healthcare professionals.
+                                Every product that bears the BAYLE'S PHARMACEUTICAL name represents our promise of quality, safety, and efficacy. We invest heavily in research and development, quality assurance, and continuous improvement to ensure we deliver the best possible healthcare solutions to patients and healthcare professionals.
                             </p>
                         </div>
                     </motion.div>

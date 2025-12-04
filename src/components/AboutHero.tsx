@@ -24,7 +24,7 @@ export default function AboutHero() {
                     transition={{ duration: 0.6 }}
                 >
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                        About PharmaCo
+                        About BAYLE'S PHARMACEUTICAL
                     </h1>
                     <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
                         Leading the way in pharmaceutical innovation and quality healthcare solutions for over 25 years.

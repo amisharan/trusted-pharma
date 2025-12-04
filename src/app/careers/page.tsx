@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import TopBar from "@/components/TopBar";
 import Footer from "@/components/Footer";
 import CareersHero from "@/components/CareersHero";
-import WhyPharmaCo from "@/components/WhyPharmaCo";
+import WhyBayles from "@/components/WhyBayles";
 import OpenPositions from "@/components/OpenPositions";
 import GeneralApplication from "@/components/GeneralApplication";
 
@@ -13,7 +13,7 @@ export default function Careers() {
             <TopBar />
             <Navbar />
             <CareersHero />
-            <WhyPharmaCo />
+            <WhyBayles />
             <OpenPositions />
             <GeneralApplication />
             <Footer />

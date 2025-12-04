@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -22,25 +23,30 @@ export default function Navbar() {
         <nav className="bg-transparent absolute top-10 left-0 w-full z-50">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
 
-                {/* Mobile Menu Button (Left) */}
+                <div className="flex items-center gap-2 md:gap-3">
+                    <div className="relative w-10 h-10 md:w-12 md:h-12 bg-white rounded-lg overflow-hidden flex-shrink-0">
+                        <Image
+                            src="/assets/bayles_logo.jpg"
+                            alt="Bayle's Pharmaceutical Logo"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+                    <div className="flex flex-col">
+                        <span className="text-white font-bold text-sm md:text-lg leading-none">
+                            BAYLE'S PHARMACEUTICAL
+                        </span>
+                        <span className="text-gray-400 text-[10px] md:text-xs font-bold">PRIVATE LIMITED</span>
+                    </div>
+                </div>
+
+                {/* Mobile Menu Button (Right) */}
                 <button
-                    className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors mr-2"
+                    className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
                     onClick={() => setIsOpen(true)}
                 >
                     <Menu size={24} />
                 </button>
-
-                <div className="flex items-center gap-3">
-                    <div className="bg-[#00aaff] text-white p-2 rounded-lg font-bold text-xl">
-                        PC
-                    </div>
-                    <div className="flex flex-col">
-                        <span className="text-white font-bold text-lg leading-none">
-                            PharmaCo
-                        </span>
-                        <span className="text-gray-400 text-xs">Healthcare Solutions</span>
-                    </div>
-                </div>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex gap-8">
@@ -78,10 +84,15 @@ export default function Navbar() {
                             >
                                 <div className="p-6 flex justify-between items-center border-b border-gray-800">
                                     <div className="flex items-center gap-2">
-                                        <div className="bg-[#00aaff] text-white p-1.5 rounded font-bold text-sm">
-                                            PC
+                                        <div className="relative w-8 h-8 bg-white rounded overflow-hidden">
+                                            <Image
+                                                src="/assets/bayles_logo.jpg"
+                                                alt="Bayle's Pharmaceutical Logo"
+                                                fill
+                                                className="object-contain"
+                                            />
                                         </div>
-                                        <span className="text-white font-bold">PharmaCo</span>
+                                        <span className="text-white font-bold text-xs">BAYLE'S PHARMACEUTICAL</span>
                                     </div>
                                     <button
                                         onClick={() => setIsOpen(false)}
@@ -108,7 +119,7 @@ export default function Navbar() {
 
                                 <div className="p-6 border-t border-gray-800">
                                     <p className="text-xs text-gray-500 text-center">
-                                        © 2025 PharmaCo Healthcare
+                                        © 2025 BAYLE'S PHARMACEUTICAL PRIVATE LIMITED
                                     </p>
                                 </div>
                             </motion.div>
