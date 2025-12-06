@@ -47,7 +47,7 @@ export default function Downloads() {
             <DownloadsHero />
 
             <div className="container mx-auto px-4 py-16">
-                {/* <div className="max-w-5xl mx-auto">
+                <div className="max-w-5xl mx-auto">
                     <h2 className="text-2xl font-bold text-[#0f172a] mb-8 flex items-center gap-2">
                         <span className="border-b-4 border-[#00aaff] pb-1">4 Documents Available</span>
                     </h2>
@@ -58,12 +58,12 @@ export default function Downloads() {
                                 key={doc.id}
                                 className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-md transition-shadow"
                             >
-                               
+
                                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00aaff] to-[#0088cc] flex items-center justify-center flex-shrink-0 text-white shadow-lg shadow-blue-500/20">
                                     <FileText size={32} />
                                 </div>
 
-                               
+
                                 <div className="flex-grow">
                                     <div className="flex items-center gap-3 mb-2">
                                         <h3 className="text-xl font-bold text-[#0f172a]">
@@ -88,7 +88,7 @@ export default function Downloads() {
                                     </div>
                                 </div>
 
-                             
+
                                 <div className="flex-shrink-0 mt-4 md:mt-0 w-full md:w-auto">
                                     <button className="w-full md:w-auto bg-[#0f172a] hover:bg-[#1e293b] text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors">
                                         <File size={18} />
@@ -98,7 +98,7 @@ export default function Downloads() {
                             </div>
                         ))}
                     </div>
-                </div> */}
+                </div>
             </div>
 
             <Footer />
